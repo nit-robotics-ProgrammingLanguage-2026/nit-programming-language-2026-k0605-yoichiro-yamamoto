@@ -11,20 +11,13 @@ int main(void)
         printf("NG");
         return 0;
     }
-    while (1)
+    for (int i = 1; i <= n; i++)
+{
+    if (i % 2 == 0)
     {
-        if (i > n)
-        {
-            break;
-        }
-        if (i % 2 != 0)
-        {
-            i++;
-            continue;
-        }
         total += i;
-        i++;
     }
+}
     printf("%ld", total);
     return 0;
 }
