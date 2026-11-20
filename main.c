@@ -13,12 +13,10 @@ int main(void)
     }
     for (int i = 1; i <= n; i++)
 {
-    if (i % 2 != 0)
+    if (i % 2 == 0)
     {
-        continue;
+        total += i;
     }
-
-    total += i;
 }
     printf("%ld", total);
     return 0;
